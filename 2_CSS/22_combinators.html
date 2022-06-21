@@ -1,0 +1,87 @@
+<!--
+    Combinadores trabalham para buscar e combinar seletores a fim de aplicar uma estilização.
+
+#   Descendant combinator
+        Maneira descendente de buscar um elemento.
+        Identificado por um espaço entre os seletores.
+        Busca um elemento dentro de outro.
+        Exemplo:
+            body article h2 {
+                color: red;
+            }
+            O h2 está dentro do article, que está dentro do body.
+            Se tivermos um 'body -> div -> article -> p -> h2' também ficará vermelho, mesmo que tenha elementos no meio do caminho.
+    
+#   Child combinator
+        Identificado pelo sinal '>' entre dois seletores.
+        Seleciona somente o elemento que é filho direto do pai.
+        Elementos depois do filho direto serão desconsiderados.
+        Exemplo:
+            body -> ul  -> li Item1
+                        -> ul -> li Item2
+
+                body ul li {
+                    color: blue;
+                }
+                Os itens 1 e 2 ficarão azul.
+
+                Já se usarmos o child combinator:
+                body > ul > li {
+                    color: blue;
+                }
+                Apenas o item 1 ficará azul.
+                Esse combinador é mais específico.
+
+#   Adjacent sibling combinator
+        Identificado pelo sinal '+' entre dois seletores.
+        Seleciona somente o elemento do lado direito que é irmão direto na hierarquia.
+        Exemplo:
+            <div>
+                <h1></h1>
+                <p></p>
+                <p></p>
+            </div>
+            h1, p e p são irmãos e filhos de div.
+            Ao fazermos:
+            h1 + p {
+                
+            }
+            Apenas o primeiro parágrafo será considerado, pois o primeiro p é o irmão direto de h1.
+
+        Outro exemplo (bastante utilizado):
+            Tenho 2 botões e quero distanciá-los:
+            <button>Botão1</button>
+            <button>Botão2</button>
+            button + button {
+                margin-left: 32px;
+            }
+            Assim a margem é considerada apenas para o botão 2 e daí fica um espaço entre os dois.
+            
+#   General sibling combinator
+        Identificado pelo sinal '~' entre dois seletores.
+        Seleciona todos os elementos irmãos.
+        Exemplo:
+            <div>
+                <h1></h1>
+                <p></p>
+                <p></p>
+                <h2></h2>
+                <p></p>
+                <h3></h3>
+                <p></p>
+            </div>
+            h1 ~ p {
+                color: red;
+            }
+            Todos os p dentro da div ficarão vermelho.
+    
+    Podemos utilizar os combinadores de diversas maneiras:
+        ul > li[class="red"] {}
+        Vai pegar todos os li filhos de ul que tenham classe red
+
+    Observação:
+        Quanto mais específico estiver no CSS, maior será a dificuldade no reuso das regras.
+        Muitas vezes, um simples uso de classes torna o trabalho mais eficiente.
+        Então no exeplo acima, seria mais eficiente fazer:
+        .red {}
+-->

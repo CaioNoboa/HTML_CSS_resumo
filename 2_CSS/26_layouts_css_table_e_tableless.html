@@ -1,0 +1,35 @@
+<!--
+    Table
+        A tag 'table' recebe um display 'table' fazendo com que os elementos internos como 'td' e 'tr' possam ser usados para montar uma tabela
+
+    Tableless
+        É não usar apenas tabelas para posicionar os elementos
+        Propriedades 'float' e 'clear' para mudança de posição dos elementos
+-->
+Tabela:
+<table>
+    <tr>
+        <td>Hora</td>
+        <td>20:00</td>
+    </tr>
+    <tr>
+        <td>Hora</td>
+        <td>20:30</td>
+    </tr>
+    <tr>
+        <td>Hora</td>
+        <td>21:00</td>
+    </tr>
+</table>
+
+---------------------
+<br>
+Tableless
+<br>
+<div style="float: left">Aqui alteramos o flow.</div>
+<div>Veja que não temos mais o block, é como se tudo fosse inline. Tudo após o float: left fica à esquerda até eu alterar.</div>
+
+<div style="float: right">Aqui estou alterando novamente o flow, jogando tudo pra direita.</div>
+
+<div style="clear: both">Aqui estamos limpando os floats, ambo esquerdo quanto direito.</div>
+<div>E voltamos a ter um flow normal.</div>

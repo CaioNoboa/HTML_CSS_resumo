@@ -1,0 +1,54 @@
+<!--
+    Hyperlinks - elemento âncora: <a>
+
+    href="" - onde colocamos pra onde será mandado
+
+    Atributos da tag a:
+        Atributos globais:
+            title, id, class
+
+            href - para onde iremos quando clicarmos no link (pode ser url completa, fragmento. email, telefone, etc.)
+            
+            download - fará o download da página ou do link ao invés de ir para o link (p.ex.: colocar o endereço de uma imagem, ao clicar, a imagem será baixada)
+
+            target - qual o alvo do disparo, se não colocar (o padrão é _self), ao clicar, o link será aberto na mesma página, isto é, sairá da página que está e irá para essa nova. Se colocar target="_blank" o link será aberto em uma nova página
+-->
+
+<p>Encontre-me:</p>
+<ul>
+    <li><a href="https://www.linkedin.com/in/caio-salvador-noboa-28a898169/" target="_blank">Website</a></li>
+    <li><a href="mailto:caiosalvador@hotmail.com">Email</a></li>
+    <li><a href="tel:+5519999144054">Telefone</a></li>
+</ul>
+
+<!-- Fragmento: Dá para fazer tipo um sumário e ao apertar em um íten, que está na mesma página, irá direto pra essa parte-->
+<p>Saiba mais:</p>
+<ul>
+    <li><a href="#about">Sobre mim</a></li>
+    <li><a href="#history">História</a></li>
+    <li><a href="#works">Trabalhos</a></li>
+</ul>
+
+<h1 id="about">Sobre mim</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, laborum totam. Dolore impedit aut quaerat amet sequi enim repellat nam fugiat, quibusdam repellendus reprehenderit fuga ea minima molestiae facere pariatur!</p>
+
+<h2 id="history">História</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum, assumenda nam soluta sequi modi ea earum voluptatem? Corporis culpa aliquid vero aut sed. Minima incidunt at ipsam distinctio et.</p>
+
+<h2 id="works">Trabalhos</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed molestiae laboriosam nemo rem! Qui facere consequuntur ipsum iste a. Provident nesciunt repellat sed illum facere est unde, amet similique minima.</p>
+
+<!--
+    Conteúdo dos hyperlinks:
+        qualquer coisa pode ser colocada como conteúdo
+-->
+
+<a href="https://www.google.com.br/" title="Ir para google" target="_blank">
+    <h1>Google</h1>
+    <p>O link pode ser extendido</p>
+    <p>Tudo isso está na mesma tag a</p>
+</a>
+
+<a href="https://www.google.com.br/" title="Ir para google" target="_blank">
+    <img src="https://source.unsplash.com/random" alt="">
+</a>

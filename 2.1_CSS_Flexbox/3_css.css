@@ -1,0 +1,24 @@
+/* Verificando quando o main axis será considerado horizontal(1) e vertical(2) */
+
+.container1, .container2, .container3, .container4 {
+    display: flex;
+    border: 1px solid;
+}
+
+.container1 {
+    flex-direction: row;
+}
+
+.container2 {
+    flex-direction: row-reverse;
+}
+
+.container3 {
+    flex-direction: column;
+    height: 100px;
+}
+
+.container4 {
+    flex-direction: column-reverse;
+    height: 100px;
+}

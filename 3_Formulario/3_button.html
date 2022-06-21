@@ -1,0 +1,34 @@
+<!--
+    Representa um botão
+    Usado para enviar formulários
+    É estilizados pelo user agent (navegador)
+
+    Atributos comuns:
+        type
+            submit (permitirá que o formulário seja enviado)
+            reset (limpa os dados)
+            button (alguns navegadores entenderão que type button também envia o formulário, mas é melhor o submit)
+        
+        autofocus (quando entrar na página o foco já tá nesse botão, ou seja, se apertar enter já acionará esse botão)
+        
+        disable (desabilita o botão, usado com js dá para desabilitar o botão enviar enquanto o usuário não tenha preenchido tudo)
+        
+        name (utilizado junto com value serve para facilitar recebimento dos dados)
+        
+        value
+        
+        form (linka a algum formulário)
+-->
+
+<form action="">
+    <input type="text">
+    <button type="submit">Enviar</button>
+    <button type="reset" autofocus>Limpar</button>
+</form>
+
+<br>
+
+<form action="" id="form">
+    <input type="text">
+</form>
+<button type="reset" form="form">Limpar</button>

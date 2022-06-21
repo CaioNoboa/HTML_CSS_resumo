@@ -1,0 +1,25 @@
+<!--
+    Quando tem que selecionar algo dentro de opções já definidas
+    
+    <select>
+        Controle que fornece um menu de opções
+
+    <option>
+        Contém as opções a serem selecionadas
+        Atributos necessários
+            value
+    
+    Atributos únicos
+        multiple (habilita múltiplas opções)
+        size (quando opções visíveis?)
+-->
+
+<label for="car-select">Qual o modelo do carro?</label>
+<br>
+<select name="car-model" id="car-select">
+    <option value="">Selecione o modelo</option>
+    <option value="fiat">Uno</option>
+    <option value="audi">A3</option>
+    <option value="chevrolet">Corsa</option>
+</select>
+<!-- Backend recebe: car-model=chevrolet -->

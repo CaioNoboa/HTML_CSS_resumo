@@ -1,0 +1,45 @@
+<!--
+    Seletores
+        Conecta um elemento HTML com o CSS para alterar o elemento.
+
+    Tipos:
+        Element selector
+            Serve para todos os elementos HTML
+            p {}; h1 {}
+
+        ID Selector
+            Um elementos que tenha um atributo 'id'. Lembrando que id deve ser único.
+            #id
+            
+        Class Selector
+            Os elementos que contenham um atributo 'class'. Podemos ter uma ou mais classes.
+            .class; (no html) class="class1 class2 class3 classn"
+
+        Atribute Selector
+            Um elemento que tenha um atributo aespecífico.
+                <h1 title="Algum título aqui">Blábláblá</h1>
+                [title] {
+                    color: blue;
+                }
+                Qualquer coisa que tiver title="" ficará azul.
+
+        Pseudo-class Selector
+            Elementos em um estado específico.
+            Exemplo:
+                Ao passarmos o mouse em cima a cor muda.
+                <h1>Título</h1>
+                h1:hover {
+                    color: red;
+                }
+
+        Podemos selecionar múltiplos seletores de uma vez:
+            p, h1, h2 {
+
+            }
+            h1:hover, p:hover {
+
+            }
+            p:hover, h1, .classe1, #id {
+
+            }
+-->

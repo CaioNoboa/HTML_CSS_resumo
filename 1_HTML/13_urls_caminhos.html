@@ -1,0 +1,42 @@
+<!--
+    URLs e Caminhos dos arquivos
+
+    - URL - Uniform Resource Locator
+        Sequência de texto que define onde algo está localizado na Web. URLs usam caminhos para encontrar arquivos
+
+    - Caminho dos arquivos
+        Onde, no explorador de arquivos, um recurso está localizado (imagens, pdf, etc.)
+-->
+
+<a href="12_hyperlinks.html" target="_blank">Abrir hyperlinks</a>
+
+<!--
+    Como navegar pelos caminhos:
+        mesmo diretório: href="12_hyperlinks.html"
+        entrando em diretórios: href="Teste/index.html"
+        saindo de diretórios - ../
+        diretório raiz (root ou pai), é a pasta onde o arquivo está: ./
+-->
+<br>
+<a href="Teste/index.html">Entrando em diretórios</a>
+<br>
+<a href="../CSS/index.html">Saindo de diretório e indo para outro</a>
+<br>
+<a href="./12_hyperlinks.html">Diretório raiz</a>
+
+<!--
+    URLS absolutos x relativos
+        Absolutos
+            Contém o protocolo e nome de domínio: https://dominio.com
+
+        Relativos
+            Relativo à página aberta no momento
+            Relativo à pasta local
+-->
+
+<p>Absoluto</p>
+<a href="https://www.google.com.br/">Ir para o google</a>
+
+<p>Relativo</p>
+<p>Aqui dará erro, pois não temos um arquivo chamado google.com na pasta "HTML" ("Cannot GET /HTML/google.com"). É relativo à pasta, assim, para urls, tem que colocar o endereço completo</p>
+<a href="google.com">Relativo</a>

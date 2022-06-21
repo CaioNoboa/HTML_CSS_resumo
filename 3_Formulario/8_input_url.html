@@ -1,0 +1,30 @@
+<!--
+    <input type="url">
+
+    Irá validar se o valor digitado é uma url
+
+    Atributos:
+        placeholder
+        readonly/disable
+        value
+        required
+        minlength / maxlength
+        size
+        pattern
+        list
+        spellcheck (habilita verificação ortográfica; false ou true)
+-->
+
+<form action="">
+    <input
+        type="url"
+        placeholder="http://example.com"
+        pattern=".*\.com.*"
+        list="urlsdata"
+        >
+    <button type="submit">Enviar</button>
+</form>
+
+<datalist id="urlsdata">
+    <option>https://www.google.com.br/</option>
+</datalist>

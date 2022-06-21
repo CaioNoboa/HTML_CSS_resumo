@@ -1,0 +1,47 @@
+<!--
+    Acrescentar video com a tag <video> não é simples e pode deixar o site mais pesado
+
+    Podemos colocar a origem do vídeo em src na tag video ou com a tag source envolta na video, onde especificamos o tipo do vídeo, isso nos fará ter menos problemas
+
+    <video>
+        src
+        controls
+        width (só o número, que será em px)
+        height (só o número, que será em px)
+        autoplay (começa a tocar o vídeo, mas tem navegadores que prezam a privacidade e não tocarão automaticamente o vídeo)
+        preload
+            ="auto" (começa a fazer a leitura do vídeo automaticamente)
+            ="metadata" (só carrega informações básicas, igual o tamanho do vídeo)
+            ="none" (só carregará quando apertar play)
+        loop (tocará novamente o vídeo ao terminar, mas depende do navegador)
+        muted (se o vídeo deve começar mutado; tem navegador que só aceitará o autoplay se estiver mutado)
+        poster="endereço de uma imagem" (coloca uma imagem de fundo no vídeo até clicar para começar)
+        se não funcionar?
+            fallback content (veja a tag p)
+        source
+            src
+            type
+            A vantagem de colcoar a tag source é que podemos colocar mais de uma, assim, o navegador tentará a primeira, se não conseguir tentará a segunda, se não conseguir, tentará as restantes até achar a tag p
+
+    Podemos vídeos adicionar também através de serviço de terceiros, como youtube
+-->
+
+<video controls
+    width="500"
+    height="400"
+    >
+    <source src="" type="video/np4">
+    <p>Este brownser não suporta este vídeo, para visualizá-lo, baixe-o <a href="">aqui</a></p>
+</video>
+
+<!--
+    Para áudios, será bastante semelhante ao vídeo
+
+    Através de javascript podemos turbinar a tag audio
+-->
+
+<audio controls>
+    <source src="" type="">
+    <source src="" type="">
+    <p>Seu navegador não suporta o áudio</p>
+</audio>

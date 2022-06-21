@@ -1,0 +1,36 @@
+<!--
+    O CSS foi evoluindo (do mais antigo para o mais novo):
+        tables
+        floats e clear
+        frameworks e grid systems
+        flexbox
+        grid
+
+    Posicionamentos
+        Propriedade (name): position
+
+        Valor da propriedade (value, data style):
+            static (padrão, seguem o fluxo normal que é um embaixo do outro)
+            
+            relative (todas nos permite colocar outras 5 propriedades: top, right, bottom, left, z-index)
+            
+            absolute (imaginemos 2 camadas, ao colocarmos algo como absolute, o elemento migra para essa segunda camada. Será absoluto em relação à página ou ao pai, veja main. Colocamos main como relative e box4 como absolute, assim box4 será relativo ao main)
+            
+            fixed (o elemento fica fixo na página ao rolar a página)
+-->
+<link rel="stylesheet" href="16_layouts.css">
+
+<div class="box1 box"></div>
+<div class="box2 box"></div>
+<div class="box3 box"></div>
+
+<main>
+    <div class="box4 box"></div>
+    <div class="box5 box"></div>
+    <div class="box6 box"></div>
+</main>
+
+<!-- O fluxo normal seria o 7 ser sobreposto pelo 8 e esse pelo 9, mas podemos alterar com o z-index. No z-index informamos a camada que queremos que o elemento fique -->
+<div class="box7 box"></div>
+<div class="box8 box"></div>
+<div class="box9 box"></div>

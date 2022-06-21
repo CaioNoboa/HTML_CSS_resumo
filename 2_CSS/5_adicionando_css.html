@@ -1,0 +1,47 @@
+<!--
+    Temos 4 formas de estilizar HTML:
+
+    inline
+        atributo style
+
+    <style>
+        tag HTML que irá conter o CSS
+
+    <link>
+        arquivo CSS externo
+
+    @import
+        arquivo CSS externo. É importado no arquivo CSS ou na tag style, mas fica um pouco mais lerdo, melhor optar pelo link
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        h2 {
+            color: red;
+        }
+    </style>
+
+    <link rel="stylesheet" href="5_css.css">
+</head>
+<body>
+    <h1 style="color: blue">
+        Título
+        <Strong style="color: green;">Alô</Strong>
+    </h1>
+
+    <h2>
+        Outra forma de usar o style é adicionando-o no head
+    </h2>
+
+    <h3>
+        Utilizando CSS interno
+    </h3>
+</body>
+</html>

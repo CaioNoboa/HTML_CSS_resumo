@@ -1,0 +1,13 @@
+/* fallback: procure 'Times New Roman', se não tiver, procure Times, se não der certo, coloque serif */
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}

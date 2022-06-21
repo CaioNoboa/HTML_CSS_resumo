@@ -1,0 +1,32 @@
+.sem-flex {
+    border: 1px dashed red;
+}
+
+.sem-flex .item {
+    border: 1px solid;
+}
+
+.flex {
+    display: flex;
+    border: 1px dashed red;
+}
+
+.flex .item {
+    border: 1px solid;
+    width: 1000px /* Mesmo colocando um valor super alto, a página dividirá o espaço da caixa '.flex' aos seus filhos */
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+    border: 1px dashed red;
+
+    /* Podemos utilizar o justify-content para alinhar os elementos:*/
+    justify-content: center;
+}
+
+.flex-wrap .item {
+    border: 1px solid;
+    width: 250px;
+}

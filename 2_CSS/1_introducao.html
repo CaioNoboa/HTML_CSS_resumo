@@ -1,0 +1,44 @@
+<!--
+    Cascading Style Sheet
+    Código para criar estilos no HTML
+    HTML é a estrutura e CSS é a estilização
+    Não é uma linguagem de programação, é uma linguagem style sheet
+
+    Elementos HTML são caixas, assim, também (quase) tudo são caixas no CSS e passíveis de modificarmos posicionamentos, tamanhos, espaçamentos, bordas, cores.
+
+    Cascata
+        Trata-se da escolha do browser de qual regra aplicar, caso haja muitas regras para o mesmo elemento
+
+        A leitura se dá de cima para baixo
+
+        Leva-se em consideração 3 fatores:
+            1. Origem do estilo
+            2. Especificidade
+            3. Importância
+        
+            Origem do estilo
+                inline > tag style > tag link
+            
+            Especificidade
+                é um cálculo matemático, onde cada tipo de seletor e origem do estilo possuem valores a serem considerados:
+
+                0. Universal selector (*), combinators e negation pseudo-class (:not())
+                1. Element type selector (h1, h2) e pseudo-elements (::before, ::after)
+                10. Classes (.class) e attribute selectors ([type="radio"])
+                100. ID selector (#id)
+                1000. Inline
+            
+            !important
+                não é considerada uma boa prática
+                vai ser usado quando estamos usando alguma biblioteca e não estamos conseguindo forçar um estilo
+
+        Vendor prefixes
+            prefixos utilizados para adaptar melhor o CSS ao navegador específico
+
+            -webkit-background-clip: text; - Chrome, Safari, iOS, Android
+            -moz-background-clip: text; - Mozilla (Firefox)
+            -ms-background-clip: text; - Internet Explorer
+            -o-background-clip: text; - Opera
+
+            https://caniuse.com/css-grid
+-->

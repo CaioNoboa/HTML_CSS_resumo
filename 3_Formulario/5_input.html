@@ -1,0 +1,37 @@
+<!--
+    <input>
+
+    Uma das tags mais utilizadas em formulários
+    Aceita diversos tipos de dados
+
+    Atributos:
+        type (text, date, number, email, file, password)
+        
+        name (serve para identificação no recebimento dos dados, backend)
+        
+        value
+
+        id
+        
+        autocomplete (busca dados no navegador que o usuário tenha usado com frequência e sugere)
+        
+        autofocus (boolean, quando a página for carregada o cursor irá automaticamente para esse elemento; só 1 por página)
+
+        disable (boolean, utilizado com js)
+
+        readonly (boolean, parecido com o disable)
+
+        form (linka input com um formulário)
+
+        required
+
+        placeholder (o que fica mostrando no espaço vazio)
+            não deixar apenas o placeholder e tirar a label! Label serve para acessibilidade
+-->
+
+<input type="text" autocomplete="name" autofocus>
+<input type="date" autocomplete="bday">
+<input type="number" autocomplete="cc-number">
+<input type="email" autocomplete="email" required>
+<input type="file">
+<input type="password" required>

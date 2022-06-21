@@ -1,0 +1,54 @@
+<!--
+    https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-elements
+    
+    Pseudo-elements
+        Com pseudo-elements nós podemos adicionar elementos HTML pelo próprio CSS.
+
+    #   ::before
+        Exemplo:
+                <li>Item1</li>
+                <li>Item2</li>
+                <li>Item3</li>
+            Se colocarmos:
+                li::before {
+                    content: "> "
+                }
+            Ficará assim:
+                > Item1
+                > Item2
+                > Item3
+
+    #   ::after
+        Exemplo:
+            Do exemplo acima, se colocarmos:
+                li::after {
+                    content: ";"
+                }
+            Ficará assim:
+                Item1;
+                Item2;
+                Item3;
+
+    Para usarmos ::before e ::after precisamos ter um content: "" dentro deles, mesmo que seja vazio (para fazer alguma outra estilização). P.ex.:
+                li {
+                    position: relative;
+                }
+                li::after {
+                    content: "";
+                    width: 10px;
+                    height: 1px;
+                    background-color: green
+                    position: absolute;
+                    bottom: 0px;
+                }
+            Isso fará uma linha verde, meio que dessa forma:
+                Item1_
+                Item2_
+                Item3_
+            Se não tiver o content, não funcionará.
+                
+    #   ::first-line - apenas a primeira linha (de um parágrafo, p.ex.) será selecionada.
+    
+    Podemos unir com pseudo-classes:
+        p:nth-of-type(2)::first-line {}
+-->

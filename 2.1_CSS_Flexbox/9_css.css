@@ -1,0 +1,38 @@
+p, div {
+    font-size: 20px;
+}
+
+.box {
+    display: flex;
+    border: 1px dashed red;
+}
+
+.box div {
+    border: 1px solid;
+    /* flex-basis: auto; */
+    /* flex-basis: 20px; */
+    flex-basis: 12.5%;
+}
+
+.box div:nth-child(1) {
+    /* width: 250px /* Isso não vai alterar nada, pois já temos o flex-basis determinando a largura dos itens */
+    height: 50px; /* Aqui já conseguimos alterar por ser tratar do eixo cruzado da linha */
+
+    /* Mas se deixarmos flex-basis: auto conseguiremos alterar largura e altura de um item */
+}
+
+.column-box {
+    display: flex;
+    flex-direction: column;
+    border: 1px dashed red;
+}
+
+.column-box div {
+    border: 1px solid;
+    flex-basis: 50px;
+}
+
+.column-box div:nth-child(1) {
+    width: 250px /* Aqui já conseguimos alterar por ser tratar do eixo cruzado da coluna */
+    /* height: 50px /* Isso não vai alterar nada, pois já temos o flex-basis determinando a altura dos itens */
+}

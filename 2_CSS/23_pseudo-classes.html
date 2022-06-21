@@ -1,0 +1,94 @@
+<!--
+    https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes
+    
+    Pseudo-classes
+        Um tipo de seletor que irá selecionar um elemento que estiver em um estado específico.
+
+        No CSS começam com : seguidos do nome da pseudo-classe:
+            seletor-prévio:pseudo-class-name
+
+    Selecionando elementos com pseudo-classes
+    #   :first-child - selecionamos o primeiro filho de um grupo de elementos
+            Exemplo:
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                Os li's são irmão dentro da caixa ul.
+                Queremos selecionar o primeiro li:
+                    ul li:first-child {}
+
+                Mas, se estiver:
+                    <ul>
+                        <h3></h3>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                Ao colocarmos:
+                    ul li:first-child {}
+                Ninguém será selecionado, pois h3 é o primeiro filho e não um li.
+
+    #   :nth-of-type() - indicaremos no () qual elemento queremos pegar com base em sua posição
+            Exemplo:
+                    <article>
+                        <h3></h3>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </article>
+                Queremos pegar o segundo p, para isso podemos fazer:
+                    article p:nth-of-type(2) {}
+    
+    #   :nth-child() - começará a contagem nos filhos, levando em conta todos os elementos
+            Exemplo:
+                Usando o exemplo acima, para pegarmos o segundo p, faríamos:
+                    article p:nth-child(3) {}
+    
+            Exemplo:
+                    <ul>
+                        <li>Item1</li>
+                        <li>Item2</li>
+                        <li>Item3</li>
+                        <li>Item4</li>
+                    </ul>
+                Para selecionarmos apenas os Itens 1 e 3 ou apenas os Itens 2 e 4, podemos utlizar:
+                    ul li:nth-child(odd) - para todos os ímpares
+                    ul li:nth-child(even) - para todos os pares
+
+    #   Ações do usuário
+        #   :hover
+            Para que o estilo mude quando passamos o mouse em cima:
+                <a href="">Clique aqui</a>
+                a:hover {
+                    color: red;
+                }
+
+        #   :focus
+            Mais para campos de input
+            Assim, quando selecionamos o campo para escrita, ele muda
+                <input type="text">
+                input:focus {
+                    border-color: blue;
+                }
+
+    #   Atributos
+        #   :disabled
+            Exemplo:
+                    <input type="text" disabled>
+                Quando o input, p.ex., for disabled, podemos trabalhar algo nele:
+                    input:disabled {
+                        background-color: gray;
+                    }
+                O fundo ficará cinza.
+
+        #   :required
+            Exemplo:
+                    <input type="text" required>
+                Quando o input, p.ex., for required, podemos trabalhar algo nele:
+                    input:required {
+                        background-color: red;
+                    }
+                O fundo ficará vermelho.
+-->

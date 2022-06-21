@@ -1,0 +1,40 @@
+<!--
+    <form></form>
+
+    Atributos básicos:
+        action (para onde o formulário será submetido)
+        method (define se enviará no formato GET, POST, etc.)
+        
+    <fieldset>
+        agrupamento de campos de mesmo propósito
+        HTML fica mais semântico e mais acessível
+        
+        Primeiro elemento de um fieldset:
+            legend (nome do agrupamento)
+    
+        Atributos especiais:
+            disable
+                disabilita todos os elementos internos
+                não serão enviados ao submeter o formulário
+            
+            form
+                o fieldset não precisa estar dentro do formulário se colocarmos o atributo form, que pedirá um id, conectanto então com o formulário
+                    Exemplo:
+                        <form id="contato">
+                        </form>                        
+                        <fieldset form="contato">
+                            <legend>Contato</legend>
+                        </fieldset>
+
+            name
+                nome do grupo do fieldset (não aparece na tela)        
+-->
+
+<form>
+    <fieldset>
+        <legend>Contato</legend>
+        <label for="">Nome</label>
+        <input type="text">
+        <button>Enviar</button>
+    </fieldset>
+</form>

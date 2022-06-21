@@ -1,0 +1,54 @@
+p, div {
+    font-size: 20px;
+}
+
+.item {
+    border: 1px solid;
+}
+
+/* Row */
+.stretch, .start, .end, .center {
+    display: flex;
+    border: 1px dashed red;
+    height: 150px;
+}
+
+.stretch {
+    align-items: stretch;    
+}
+
+.start {
+    align-items: start;    
+}
+
+.end {
+    align-items: end;
+}
+
+.center {
+    align-items: center;
+}
+
+/* Column */
+.column-stretch, .column-start, .column-end, .column-center {
+    display: flex;
+    border: 1px dashed red;
+    flex-direction: column;
+    height: 200px;
+}
+
+.column-stretch {
+    align-items: stretch;    
+}
+
+.column-start {
+    align-items: start;    
+}
+
+.column-end {
+    align-items: end;
+}
+
+.column-center {
+    align-items: center;
+}

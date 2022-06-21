@@ -1,0 +1,37 @@
+<!--
+    SVG
+    É uma marcação, estilo html, mas não é para textos, mas sim para fazer imagens.
+    Possui elementos para gerar forma
+
+    Existem imagens rasterizadas (pixeladas) e imagens vetorizadas
+
+    O que fazemos em svg é uma imagem vetorizada que possui vantagens e desvantagens
+
+    Vantagens
+        mais leve
+        mais detalhada
+        maior acessibilidade e SEO
+        pode ser editada via CSS ou atributos
+    Desvantagens
+        podem ser mais complicadas de se trabalhar
+        quanto mais complexa, mais trabalho para o navegador
+        navegadores mais antigos não vão suportar essa tag
+
+    Para fotografias é melhor imagens rasterizadas
+
+    Pelo figma podemos exportar imagens em svg. Não fazemos na mão, usamos programas paa isso
+
+    Será uma boa opção para ícones, p.ex.
+-->
+
+<svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="10" fill="white"/>
+</svg>
+
+<svg width="100" height="100">
+    <rect width="100" height="100" stroke="blue" stroke-width="10" fill="green"/>
+</svg>
+
+<!-- Imagens rasterizadas ficam com dados em cache, imagens svg precisam de requisições constantes do navegador. Para contornar esse problema podemos fazer: -->
+
+<img src="./20_svg.svg" alt="">

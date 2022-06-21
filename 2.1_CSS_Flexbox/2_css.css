@@ -1,0 +1,30 @@
+/* Verificando quando o main axis será considerado horizontal(1) e vertical(2) */
+
+.container1 {
+    display: flex;
+    justify-content: flex-end; /* como o main axis é o horizontal, o elemento vai para a esquerda*/
+    border: 1px solid red;
+}
+
+.container2 {
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    justify-content: flex-end; /* como o main axis é o vertical, o elemento vai para baixo*/
+    border: 1px solid red;
+}
+
+.container3 {
+    display: flex;
+    height: 200px;
+    border: 1px solid red;
+}
+
+.item {
+    background-color: gray;
+    border: 1px solid;
+}
+
+.container3 .item {
+    flex: 1; /* a largura de G H e I preenchem todo o espaço da caixa*/
+}

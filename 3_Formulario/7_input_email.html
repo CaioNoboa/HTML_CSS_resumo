@@ -1,0 +1,32 @@
+<!--
+    <input type="email">
+
+    Irá validar se o valor digitado é um email
+
+    Atributos:
+        placeholder
+        readonly/disable
+        value
+        required
+        minlength / maxlength
+        size
+        pattern
+
+        multiple (boolean; permite colcoar um ou mais emails separados por ',')
+
+        list
+-->
+
+<form action="">
+    <input
+        type="email"
+        placeholder="Digite seu email Confitec"
+        pattern=".+@confitec\.com\.br"
+        list="emailsdata"
+        >
+    <button type="submit">Enviar</button>
+</form>
+
+<datalist id="emailsdata">
+    <option>caio.noboa@confitec.com.br</option>
+</datalist>

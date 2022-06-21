@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+
+    /* definindo as áreas, serão duas colunas e 3 linhas. Eu nomeio cada espaço e depois relaciono com cada um */
+    grid-template-areas: 
+        /* 
+        "coluna1 coluna2" (linha 1)
+        "coluna1 coluna2" (linha 2)
+        "coluna1 coluna2"; (linha 3)
+        */
+        "header header"
+        "main aside"
+        "footer footer";
+
+    /* Definindo tamanho de cada linha. O fr é uma fração, deixa essa linha flexível */
+    grid-template-rows: 40px 1fr 40px;
+
+    /* Colunas */
+    grid-template-columns: 1fr 80px;
+}
+
+header {
+    background-color: green;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+}
+
+main {
+    background-color: red;
+    grid-area: main; 
+}
+
+aside {
+    background-color: blue;
+    grid-area: aside;
+}
+
+footer {
+    background-color: gray;
+    grid-area: footer;
+}

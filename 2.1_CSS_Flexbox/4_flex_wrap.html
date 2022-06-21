@@ -1,0 +1,54 @@
+<!--
+    Flex wrap
+    
+    Capacidade que o flex tem de usar multi linhas
+    Cada nova linha, um novo flez container
+-->
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="4_css.css">
+</head>
+
+<body>
+    <p>Normal flow (sem o flex)</p>
+    <div class="sem-flex">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+
+    <p>Flex</p>
+    <div class="flex">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+
+    <p>Flex wrap</p>
+    <p>Ao colocarmos um width em 'flex', não importa o tamanho que coloquemos, quando diminuirmos ou aumentarmos a página, o tamanho de 'A, B, C, D' serão ajustados autometicamente à caixa.</p>
+    <p>Contudo, ao colcoarmos flex-wrap e colocarmos um tamanho para 'A, B, C, D', se não houver espaço para que eles fiquem um ao lado do outro, automaticamente será formado novas linhas:</p>
+    <p>Veja que sobrou espaço inutilizado dentro da caixa devido ao ajuste em linhas respeitando o tamanho dado aos elementos:</p>
+    <div class="flex-wrap">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+    </div>
+    
+</body>
+
+</html>

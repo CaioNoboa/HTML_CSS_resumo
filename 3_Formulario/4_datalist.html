@@ -1,0 +1,30 @@
+<!--
+    datalist
+
+    Lista de valores sugeridos (não obrigatórios) a uma tag input
+
+    Precisamos linkar com o input. Id na datalist e list no input
+
+    O type no input deve ser o mesmo que o da lista.
+        Ex.:
+        <input type="color" list="fruitsdata">
+        Como fruitsdata é do type text, não aparecem as sugestões da lista
+-->
+
+<input type="text" list="fruitsdata" placeholder="Escolha uma fruta">
+
+<datalist id="fruitsdata">
+    <option>maçã</option>
+    <option>morango</option>
+    <option>banana</option>
+    <option>laranja</option>
+    <option>tangerina</option>    
+</datalist>
+
+<datalist id="colorsdata">
+    <option>#ff0000</option>
+    <option>#00ff00</option>
+    <option>#0000ff</option>
+</datalist>
+
+<input type="color" list="colorsdata">

@@ -1,0 +1,53 @@
+<!--
+    background-image: url();
+    Por padrão a imagem ficará se repetindo
+    
+    Podemos deixar de repetir:
+    background-repeat: no-repeat;
+
+    Podemos deixar repetir apenas no eixo y:
+    background-repeat: repeat-y;
+    
+    Podemos deixar repetir apenas no eixo x:
+    background-repeat: repeat-x;
+
+    Podemos alterar a posição da imagem:
+    background-position: right center; (eixo x e y) (se colcoarmos apenas um valor, será aplicado tanto pro x quanto pro y)
+        podem ser top, bottom, right, left, center
+    
+    Modificando o tamanho da imagem
+    background-size: ;
+        podem ser:
+            contain - para a imagem ficar dentro do espaço
+            cover - a imagem se estica para cobrir todo o fundo
+            Poncentagem - se colcoarmos um valor, tipo 50%, será aplicado para o eixo x e a largura será automática. Se aplicarmos dois valores, 50% 25%, eixo x e y, faremos com que a imagem distorça
+            E outros, como em, px, etc.
+    
+    Alterando a origem da imagem:
+        background-origin: border-box; - a imagem iniciará nas bordas
+        background-origin: content-box; - é o padrão, a imagem iniciará dentro das bordas
+        background-origin: padding-box; - a imagem iniciará no padding
+        
+    Alterando origem da imagem e do background-color:
+        background-clip: border-box; - é o padrão, a cor iniciará nas bordas e a imagem dentro das bordas
+        background-clip: content-box; - é o padrão, iniciará dentro das bordas
+        background-clip: padding-box; - iniciará no padding. Para que a imagem não fique cortada, podemos colocar background-origin: content-box; para que a imagem se adapte nesse novo espaço
+
+    Podemos alterar para que o background role junto com o mouse ou não
+        background-attachment: scroll; padrão
+        background-attachment: fixed; fundo é fixo, brega
+
+    Shorthand:
+        background: rgb(55, 100, 50) url() no-repeat center top / 50px content-box;
+
+    Podemos utilizar gradientes
+        background: linear-gradient(red, yellow);
+        background: linear-gradient(45deg, red, yellow);
+        background: linear-gradient(90deg, red, yellow, green);
+        
+        de forma circular:
+        background: radial-gradient(red, yellow, green);
+
+    Podemos usar múltiplos backgrounds:
+    background: linear-gradient(90deg, red, yellow, green), url() no-repeat center top / 50px content-box fixed; Dessa maneira a imagem de fundo ficará fixa, mas haverá um gradiente por toda a página
+-->

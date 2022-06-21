@@ -1,0 +1,54 @@
+<!--
+    Flex Container - 'caixa'
+        Flex item - 'itens da caixa'
+
+    Nesting - quando um elemento contém outros elementos
+
+    Axis - eixos
+        main
+            start
+            end
+        cross
+            start
+            end
+    
+    Flex sizing - item ser flexível, altera height e width
+        flexível
+        altera width/height dos itens para preenchimento dos espaços do flex container
+-->
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="2_css.css">
+</head>
+
+<body>
+    <p>Axis</p>
+    <p>Aqui o main axis (eixo principal) é o eixo horizontal e o cross axis (eixo cruzado) é o vertical:</p>    
+    <div class="container1">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+    
+    <p>Aqui o main axis (eixo principal) é o eixo vertical e o cross axis (eixo cruzado) é o horizontal:</p>
+    <div class="container2">
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+
+    <p>Aqui veremos sobre Flex sizing:</p>
+    <div class="container3">
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+    </div>
+</body>
+
+</html>

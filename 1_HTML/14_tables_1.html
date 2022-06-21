@@ -1,0 +1,52 @@
+<!--
+    Tabelas <table>
+
+    A tag 'table' recebe um display 'table' fazendo com que os elementos internos como 'td' e 'tr' possam ser usados para montar uma tabela
+    
+    Prós
+        Visualização de dados via linhas e colunas
+        Boa acessibilidade para leitura dos dados
+
+    Contras
+        Pouco flexível (não vai se adaptar a qualquer layout)
+        Precisa de estilização para melhor visualização
+
+    Não usar
+        Para criar seu layout
+
+    Composição
+    <table></table>
+    <caption></caption> - 'legenda'
+    <thead></thead> - cabeçalho  
+        <th></th> table header - primeira linha formando um cabeçalho
+    <tbody></tbody> - corpo
+        <tr></tr> table row - linhas
+        <td></td> table description - conteúdo (dados) da tabela
+    <tfoot></tfoot> - rodapé
+-->
+
+<table>
+    <caption>Pessoas por idade</caption>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mayk</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>Diego</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total:</td>
+            <td>2 pessoas</td>
+        </tr>
+    </tfoot>
+</table>

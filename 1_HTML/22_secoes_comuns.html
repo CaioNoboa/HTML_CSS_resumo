@@ -1,0 +1,131 @@
+<!--
+    Seções comuns em documentos HTML:
+        header - cabeçalho. Fica no topo da página. Geralmente tem logo, menu.
+
+        nav - navegação. O menu seria a navegação do site. Leva links para navegar pelo site. Pode estar dentro do cabeçalho, na parte lateral página, na parte inferior e etc.
+
+        main - conteúdo principal. Contém textos, imagens, títulos e etc. Contém o conteúdo principal do site.
+
+        aside - barra lateral. Pode conter anúncios, informações da página, navegação e etc.
+
+        footer - rodapé. Parte inferior do site. Contém informações de contato e etc.
+    
+    Organização visual das estruturas do site são pelo CSS.
+
+    Mais informações sobre as seções:
+
+#   Header
+        Podemos utilizar no início da página e, quando é feito dessa maneira, é visto como global da página, header que pertence à página toda. Daí geralmente conterá logomarca, navegação, etc.
+
+        Pode ser utilizado em outros elementos semânticos como article, section, ex.:
+            <section>
+                <header></header>
+            </section>
+            Quando utilizado dentro de uma section, o header será o cabeçalho dessa seção.
+            Quando utilizado em seção, pode ter um h2 para explicar a seção e etc.
+
+        Não faz sentido colocar header dentro de header ou footer. Mas podemos utlizar vários headers, um global e de seções.
+
+#   Nav
+        Geralmente vem dentro do header
+
+        Não precisa conter todos os links da página, apenas os principais, mais importantes
+
+        Nav geralmente é pra algo mais importante. Se uma seção precisar de uma navegação, dá pra usar outro nav
+
+#   Main
+        Apenas um por página.
+
+        Dentro do body.
+
+        Não deve conter blocos de publicidade, navegação e etc.
+
+        Não deve ser englobado por nada além de body.
+    
+    #   Article
+            Podem ser posts, receitas e etc. Ex.:
+            <main>
+                <h1>Título</h1>
+                <p>Explicação da página</p>
+                <article>
+                    <h2>Receita 1</h2>
+                    <p>Blábláblá</p>
+                </article>
+                <article>
+                    <h2>Receita 2</h2>
+                    <p>Blábláblá</p>
+                </article>
+            </main>
+    
+#   Aside
+        Ajuda a descrever coisas do main.
+        Pode conter explicações, glossários, links extras, biografia do autor, informações do perfil e etc.
+
+        Tem alguma relação com o conteúdo do main.
+
+#   Footer
+        Geralmente no final da página (footer global).
+        
+        Seções, article podém ter footer.
+
+        Pode conter informações do autor, copyright, contato, sitemap, voltar ao topo.
+
+#   Section
+        Serve para colocar seções na página.
+        Antes era utilizado div, mas é melhor o section pela semântica. Ex.:
+            <article>
+                <h2>Receita 1</h2>
+                <p>Blábláblá</p>
+                <section>
+                    <h3>Modo de preparo</h3>
+                </section>
+            </article>
+            <article>
+                <h2>Receita 2</h2>
+                <p>Blábláblá</p>
+                <section>
+                    <h3>Modo de preparo</h3>
+                </section>
+            </article>
+
+            Ou:
+            <main>
+                <h1>Receita</h1>
+                <p>Descrição resumida</p>
+            
+                <section>
+                    <h2>Modo de preparo</h2>
+                    <p>Blábláblá</p>
+                </section>
+            </main>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        logomarca
+        <nav>
+            <ul>
+                <li>Menu</li>
+                <li>Contatos</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        conteúdo principal
+    </main>
+
+    <aside>
+        parte lateral
+    </aside>
+
+    <footer>rodapé</footer>
+</body>
+</html>
